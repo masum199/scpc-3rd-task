@@ -54,7 +54,7 @@
 // const result = findMostFrequentElement(inputArray);
 // console.log(result);
 
-// Task 3 
+// TASK 4
 
 // function arrayOfNumbersAndTarget(arr, target) {
 //     for (let i = 0; i < arr.length; i++) {
@@ -72,6 +72,54 @@
 // const targetValue = 9;
 // const result = arrayOfNumbersAndTarget(arrayValue,targetValue)
 // console.log(result);
+
+
+// Task 5
+
+// function simpleCalculator(num1,operator,num2){
+//     if(operator == "+"){
+//         return num1 + num2;
+//     }
+//     else if(operator == "-"){
+//         return num1-num2
+//     }
+//     else if(operator == "*"){
+//         return num1 * num2
+//     }
+//     else if (operator === '/') {
+//         if (num2 === 0) {
+//             throw  Error("Division by zero is not allowed.");
+//         }
+//         return num1 / num2;
+//     }
+// }
+// console.log(simpleCalculator(5, "+", 5));
+// console.log(simpleCalculator(5, "-", 5));
+// console.log(simpleCalculator(5, "*", 5));
+// console.log(simpleCalculator(5, "/", 5));
+
+
+
+
+// TASK 6
+
+// function generateRandomPassword(length) {
+//     const upperCaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//     const lowerCaseChars = "abcdefghijklmnopqrstuvwxyz";
+//     const numberChars = "0123456789";
+//     const specialChars = "!@#$%^&*()-_=+[]{}|;:,.<>?";
+
+//     const allChars = upperCaseChars + lowerCaseChars + numberChars + specialChars;
+//     let password = "";
+//     for (let i = 0; i < length; i++) {
+//         const randomIndex = Math.floor(Math.random() * allChars.length);
+//         password += allChars.charAt(randomIndex);
+//     }
+//     return password;
+// }
+// const passwordLength = 20;
+// const newPassword = generateRandomPassword(passwordLength);
+// console.log(newPassword);
 
 
 
