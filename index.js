@@ -124,21 +124,36 @@
 
 // TASK 7
 
-function romanToInt(s) {
-    const map = {I: 1,V: 5,X: 10,L: 50,C: 100,D: 500,M: 1000,};
-    let result = 0;
-    s.split('').forEach((num, i) => {
-        if(map[num] < map[s[i + 1]]) {
-            result -= map[num];
-        }
-        else {
-            result += map[num]
-        }
-    });
-    return result;
-    };
-  // Test examples:
-  console.log(romanToInt("II"));
+// function romanToInt(s) {
+//     const map = {I: 1,V: 5,X: 10,L: 50,C: 100,D: 500,M: 1000,};
+//     let result = 0;
+//     s.split('').forEach((num, i) => {
+//         if(map[num] < map[s[i + 1]]) {
+//             result -= map[num];
+//         }
+//         else {
+//             result += map[num]
+//         }
+//     });
+//     return result;
+//     };
+//   console.log(romanToInt("IV"));
+
+// TASK 8
+
+function findSecondSmallest(arr) {
+    if (arr.length < 2) {
+      throw new Error("Array should have at least two elements.");
+    }
+  
+    arr.sort((a, b) => a - b);
+  
+    return arr[1];
+  }
+  
+  const numbers = [12,45,6,2,5,7,8,4,3];
+  const secondSmallestNumber = findSecondSmallest(numbers);
+  console.log(secondSmallestNumber);
 
 
 
